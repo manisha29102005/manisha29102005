@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>prime or not prime</title>
+    <script>
+        let n = prompt("enter a number");
+        let cant = 0;
+        if (n <= 1) {
+            document.write("the number is not prime"); 
+        }
+        else {
+            for (let i = 1; i <= n; i++) {
+                if (n % i == 0) {
+                    document.write("your Number=" + n % i + "<br>")
+                    cant++;
+                }
+            }
+        }
+        if (cant > 2) {
+            document.write("this is not prime" + n);
+        }
+        else {
+            document.write("the number is prime" + n);
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
