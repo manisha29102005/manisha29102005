@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        #f1 {
+            background-color: yellowgreen;
+            font-size: medium;
+            color: blue;
+            font-display: block;
+            font-family: 'Times New Roman', Times, serif;
+            border: rgb(36, 158, 36);
+            text-align: center;
+            margin: auto;
+            height: 500px;
+            width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+
+        }
+    </style>
+
+
+    <title>form</title>
+</head>
+
+<body>
+    <form id="f1" onsubmit="valid()">
+        <h1><u>login page</u></h1>
+        <label>UserName</label>
+        <input type="text" id="UserName" /><br><br><br>
+        <label>Password</label>
+        <input type="text" id="Password" /><br><br><br>
+        <input type="submit">
+        <input type="reset">
+
+    </form>
+    <script>
+        function valid() {
+            let User = document.getElementById('UserName').value;
+            let user = document.getElementById('Password').value;
+            if (User === "") {
+                alert("Please enter the value");
+                return false;
+            }
+            else if (pass === "") {
+                alert("Please Enter the value");
+                return false;
+
+            }
+            if (pass.length < 6 || pass.length > 10) {
+                alert("Password Mustbe between 6 to 10");
+                return false;
+            }
+            if (pass != cmpass) {
+                alert("Please Enter same Password");
+                return false;
+            }
+            return true;
+
+        }
+
+    </script>
+
+</body>
+
+</html>

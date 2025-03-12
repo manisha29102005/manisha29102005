@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pact15</title>
+</head>
+
+<body>
+    <h1 id="ch" onmouseenter="fn()">welcome to my web page</h1>
+    <p class="text" onmousemove="changcolor()">my name is manisha</p>
+    <p class="text" onmouseout="changcolor2()">my name is priya</p>
+    <script>
+        function fn() {
+            let ele = document.getElementById('ch')
+            ele.innerHTML = "aje nai kale avjo!!"
+        }
+        function changcolor() {
+            let element = document.getElementsByClassName('text')
+            element[0].style.color = "blue";
+            element[0].style.fontSize = "50px";
+            element[0].style.backgroundColor = "red";
+            element[1].style.backgroundColor = "yellow";
+        }
+
+        function changcolor2() {
+            let element = document.getElementsByClassName('text')
+
+            element[1].style.color = "pink";
+            element[1].style.fontSize = "101px";
+            element[1].style.backgroundColorb = "blue";
+            element[0].style.backgroundColor = "green";
+            element[1].style.backgroundColor = "purple";
+
+
+        }
+    </script>
+</body>
+
+</html>
